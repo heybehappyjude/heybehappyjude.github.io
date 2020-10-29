@@ -2,25 +2,35 @@ body {
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
 }
-
+.navbar{
+  padding-top: 30px
+}
+.pattern .line{
+  margin-left: 1680px;
+}
 .main {
   background-image: url('../img/box.png');
   background-size: 800px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 780px;
+  height: 600px;
 }
 
 .main .title-left {
-padding-top: 325px;
+padding-top: 225px;
 }
 
 .main .title-center {
-padding-top: 300px;
+padding-top: 200px;
 margin-left: 300px;
 margin-right: 300px
 }
 
 .main .title-right {
-padding-top: 325px;
+padding-top: 225px;
+}
+
+.pattern .portfolio{
+  padding-left: 25px;
+  padding-top: 15px
 }
