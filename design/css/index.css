@@ -1,18 +1,26 @@
-body{
-  background-image: url('../img/bg.png')
+body {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
 }
 
-.main{
-background-image: url('../img/box.png');
-background-size: 800px;
-background-repeat: no-repeat;
-background-position: center;
-height: 780px;
+.main {
+  background-image: url('../img/box.png');
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 780px;
 }
- .main h1{
-   text-align: center;
-   padding-top: 300px;
-   font-size: 75px;
-   font-weight: lighter;
-   color: #ffffff;
- }
+
+.main .title-left {
+padding-top: 325px;
+}
+
+.main .title-center {
+padding-top: 300px;
+margin-left: 300px;
+margin-right: 300px
+}
+
+.main .title-right {
+padding-top: 325px;
+}
