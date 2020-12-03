@@ -1,36 +1,87 @@
 body {
-  background-image: url('../img/bg.png');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
-.navbar{
+
+.navbar {
   padding-top: 30px
 }
-.pattern .line{
-  margin-left: 1680px;
+
+.pattern .line {
+  margin-left: 1650px;
 }
+
 .main {
   background-image: url('../img/box.png');
   background-size: 800px;
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
+  margin-top: -150px;
 }
 
 .main .title-left {
-padding-top: 225px;
+  padding-top: 225px;
 }
 
 .main .title-center {
-padding-top: 200px;
-margin-left: 300px;
-margin-right: 300px
+  padding-top: 200px;
+  margin-left: 300px;
+  margin-right: 300px
 }
 
 .main .title-right {
-padding-top: 225px;
+  padding-top: 225px;
 }
 
-.pattern .portfolio{
+.pattern .portfolio {
   padding-left: 25px;
-  padding-top: 15px
+  margin-top: -320px;
+}
+
+.text-img {
+  align: center;
+}
+
+.sub {
+  background-image: url('../img/circle.png');
+  background-size: 1930px;
+  background-repeat: no-repeat;
+}
+
+.container1 {
+  text-align: center;
+  padding-top: 0;
+  margin-top: -180px;
+}
+
+.text4 {
+  padding-top: 40px
+}
+
+.container2 .d-flex {
+  margin-left: -20px;
+  margin-top: -150px;
+}
+
+.text {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+.info .sk {
+  padding-top: 10px;
+}
+
+.info .co {
+  padding-top: 10px;
+}
+
+.me {
+  padding-left: 100px
 }

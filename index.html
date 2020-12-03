@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="design/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
   <title>양다원_포트폴리오</title>
 </head>
 
@@ -61,25 +63,97 @@
       </div>
     </div>
   </nav>
-  <div class="pattern">
-      <img class="line" src="design/img/line.png" width="250px" alt="">
-  <section class="main">
-    <div class="container">
-      <!--<img src="img/box.png" alt="" width="1200px" align="center">-->
+  <!--<div class="pattern">
+    <img class="line" src="design/img/line.png" width="250px" alt="">
+  </div>-->
 
-      <div class="d-flex justify-content-center">
-        <div class="title-l">
-          <img class="title-left" src="design/img/thinker.png" width="330px" alt="">
+  <div id="fullpage">
+    <div class="chain section">
+      <section class="main animate__animated animate__fadeIn ">
+        <div class="container animate__animated animate__fadeInUp">
+          <!--<img src="img/box.png" alt="" width="1200px" align="center">-->
+          <div class="d-flex justify-content-center">
+            <div class="title-l animate__animated animate__fadeInUp animate__delay-1s">
+              <img class="title-left" src="design/img/thinker.png" width="330px" alt="">
+            </div>
+            <div class="title-c">
+              <img class="title-center " src="design/img/title.png" width="330px" alt="">
+            </div>
+            <div class="title-r animate__animated animate__fadeInUp animate__delay-2s">
+              <img class="title-right" src="design/img/graphic.png" width="330px" alt="">
+            </div>
+          </div>
         </div>
-        <div class="title-c">
-          <img class="title-center" src="design/img/title.png" width="330px" alt="">
-        </div>
-        <div class="title-r">
-          <img class="title-right" src="design/img/graphic.png" width="330px" alt="">
-        </div>
-  </section>
-  <div class="pattern">
+      </section>
+    </div>
+
+
+    <div class="pattern">
       <img class="portfolio" src="design/img/portfolio.png" width="330px" alt="">
+    </div>
+
+      <section class="sub section">
+        <div class="container container1">
+          <img class="text1 animate__animated animate__delay-2s" src="design/img/text1.png" width="400px">
+          <br>
+          <img class="text2 animate__animated animate__delay-2s" src="design/img/text2.png" width="400px">
+          <br>
+          <img class="text3 animate__animated animate__delay-2s" src="design/img/text3.png" width="400px">
+          <br>
+          <img class="text4 animate__animated animate__delay-2s" src="design/img/text4.png" width="400px">
+        </div>
+      </section>
+      <!--<div class="profile">-->
+
+      <section class="sub2 section">
+        <div class="container2">
+          <div class="d-flex justify-content-center">
+            <div class="info">
+              <h1 class="text"> Yang Dawon </h1>
+              <br>
+              <br>
+              <h2 class="text"> Skills </h2>
+              <img class="sk" src="design/img/skills.png" width="370px">
+              <br>
+              <br>
+              <h2 class="text"> Contacts </h2>
+              <img class="co" src="design/img/contact.png" width="320px">
+            </div>
+            <div class="me">
+              <img class="pic" src="design/img/profile.png" width="350px">
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+
+
+
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/easings.min.js" integrity="sha512-SrKslwu6IjHEo/8mAOtkoUOT3MzHCEOFWktrC8BNtjPuBBYLYjg1y/Marat34uYfOfxDMLEwy8DLArWEVc2i+w==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  new fullpage('#fullpage', {
+    //options here
+    autoScrolling: true,
+    scrollHorizontally: true,
+    navigation: false,
+    navigationPosition: 'right',
+    anchors: ['home', 'secondPage', 'profile'],
+    afterLoad: function(origin, destination, direction){
+  var loadedSection = this;
+
+  //using index
+  if(origin.index == 0){
+    $('.text1').addClass('animate__fadeInUp')
+    $('.text2').addClass('animate__fadeInUp')
+    $('.text3').addClass('animate__fadeInUp')
+    $('.text4').addClass('animate__fadeInUp')
+  }
+}
+
+  });
+</script>
 
 </html>
